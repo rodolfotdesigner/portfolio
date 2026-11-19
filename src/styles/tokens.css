@@ -1,1 +1,12 @@
-/* Design tokens will be defined from the approved Figma frames. */
+:root {
+  /* Primitive colors */
+  --color-primary-400: #4880fe;
+  --color-primary-800: #1a28b3;
+  --color-primary-900: #1b298d;
+  --color-primary-950: #151b56;
+  --color-neutral-50: #f6f5f3;
+
+  /* Semantic colors */
+  --color-surface-page: var(--color-neutral-50);
+  --color-text-on-dark: var(--color-neutral-50);
+}
