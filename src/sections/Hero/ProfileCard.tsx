@@ -14,24 +14,38 @@ export default function ProfileCard() {
       <p className={styles.role} data-hero-anim="role">{t('hero.role')}</p>
       <ul className={styles.contacts} aria-label={t('hero.contactsLabel')}>
         <li data-hero-anim="contact">
-          <span className={styles.contact}>
+          <a
+            className={styles.contact}
+            href="https://wa.me/5511983447912"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={whatsappIcon} alt={t('hero.whatsapp')} width="24" height="24" />
-          </span>
+          </a>
         </li>
         <li data-hero-anim="contact">
-          <span className={styles.contact}>
+          <a
+            className={styles.contact}
+            href="https://www.linkedin.com/in/rodolfo-tadeu/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={linkedinIcon} alt={t('hero.linkedin')} width="24" height="24" />
-          </span>
+          </a>
         </li>
         <li data-hero-anim="contact">
-          <span className={`${styles.contact} ${styles.email}`}>
+          <a className={`${styles.contact} ${styles.email}`} href="mailto:rodolfotdesigner@gmail.com">
             <img src={emailIcon} alt={t('hero.email')} width="26" height="21" />
-          </span>
+          </a>
         </li>
         <li data-hero-anim="contact">
-          <span className={`${styles.contact} ${styles.download}`}>
+          <a
+            className={`${styles.contact} ${styles.download}`}
+            href="/cv/rodolfo-tadeu-cv.pdf"
+            download="rodolfo-tadeu-cv.pdf"
+          >
             <img src={downloadCvIcon} alt={t('hero.downloadCv')} width="97" height="19" />
-          </span>
+          </a>
         </li>
       </ul>
     </div>

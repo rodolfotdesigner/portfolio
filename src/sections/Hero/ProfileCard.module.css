@@ -17,6 +17,10 @@
   text-align: center;
 }
 
+.card:focus-within {
+  clip-path: none !important;
+}
+
 .name {
   margin: 0;
   font-size: 1.5rem;
@@ -41,6 +45,10 @@
   list-style: none;
 }
 
+.contacts li:focus-within {
+  opacity: 1 !important;
+}
+
 .contact {
   display: grid;
   width: 48px;
@@ -48,6 +56,11 @@
   place-items: center;
   border: 1px solid rgb(255 255 255 / 20%);
   border-radius: 5.5px;
+}
+
+.contact:focus-visible {
+  outline: 2px solid var(--color-neutral-50);
+  outline-offset: 2px;
 }
 
 .email {
