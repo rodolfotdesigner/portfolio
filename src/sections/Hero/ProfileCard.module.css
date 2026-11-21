@@ -62,3 +62,52 @@
 .contact img {
   display: block;
 }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .contacts {
+    width: max-content;
+  }
+}
+
+@media (max-width: 767px) {
+  .card {
+    top: auto;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    min-height: var(--hero-card-height);
+    padding-top: clamp(40px, calc(57.142857px - 2.232143vw), 50px);
+    padding-bottom: 40px;
+  }
+
+  .name {
+    font-size: clamp(18px, calc(13.714286px + 1.339286vw), 24px);
+  }
+
+  .role {
+    margin-top: clamp(2px, calc(0.571429px + 0.446429vw), 4px);
+    font-size: clamp(16px, calc(11.714286px + 1.339286vw), 22px);
+  }
+
+  .contacts {
+    width: max-content;
+    max-width: calc(100% - 28px);
+    gap: clamp(9px, calc(5.428571px + 1.116071vw), 14px);
+    margin-top: clamp(18px, calc(31.714286px - 1.785714vw), 26px);
+  }
+
+  .contact,
+  .email {
+    width: clamp(40px, calc(34.285714px + 1.785714vw), 48px);
+    height: clamp(42px, calc(45.428571px - 0.446429vw), 44px);
+  }
+
+  .email {
+    width: clamp(40px, calc(37.142857px + 0.892857vw), 44px);
+    height: 44px;
+  }
+
+  .download {
+    width: clamp(113px, calc(108px + 1.5625vw), 120px);
+  }
+}

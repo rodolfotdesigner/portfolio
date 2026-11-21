@@ -9,26 +9,26 @@ export default function ProfileCard() {
   const { t } = useTranslation()
 
   return (
-    <div className={styles.card}>
-      <p className={styles.name}>{t('hero.name')}</p>
-      <p className={styles.role}>{t('hero.role')}</p>
+    <div className={styles.card} data-hero-anim="card">
+      <p className={styles.name} data-hero-anim="name">{t('hero.name')}</p>
+      <p className={styles.role} data-hero-anim="role">{t('hero.role')}</p>
       <ul className={styles.contacts} aria-label={t('hero.contactsLabel')}>
-        <li>
+        <li data-hero-anim="contact">
           <span className={styles.contact}>
             <img src={whatsappIcon} alt={t('hero.whatsapp')} width="24" height="24" />
           </span>
         </li>
-        <li>
+        <li data-hero-anim="contact">
           <span className={styles.contact}>
             <img src={linkedinIcon} alt={t('hero.linkedin')} width="24" height="24" />
           </span>
         </li>
-        <li>
+        <li data-hero-anim="contact">
           <span className={`${styles.contact} ${styles.email}`}>
             <img src={emailIcon} alt={t('hero.email')} width="26" height="21" />
           </span>
         </li>
-        <li>
+        <li data-hero-anim="contact">
           <span className={`${styles.contact} ${styles.download}`}>
             <img src={downloadCvIcon} alt={t('hero.downloadCv')} width="97" height="19" />
           </span>

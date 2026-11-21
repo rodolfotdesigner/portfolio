@@ -47,3 +47,61 @@
   font-weight: 400;
   line-height: 1.5;
 }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .hero {
+    padding-block: 48px;
+  }
+
+  .layout {
+    grid-template-columns: minmax(0, 1fr);
+    justify-items: center;
+    row-gap: 48px;
+  }
+
+  .content {
+    width: 100%;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero {
+    --hero-visual-width: clamp(288px, calc(176.571429px + 34.821429vw), 444px);
+    --hero-visual-height: clamp(557px, calc(411.285714px + 45.535714vw), 761px);
+    --hero-card-height: clamp(210px, calc(211.714286px - 0.223214vw), 211px);
+
+    display: block;
+    min-height: 947px;
+    padding-block: 48px;
+  }
+
+  .layout {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content {
+    width: 100%;
+    padding: clamp(18px, calc(-3.428571px + 6.696429vw), 48px)
+      clamp(24px, calc(30.857143px - 0.892857vw), 28px) 0;
+  }
+
+  .copy {
+    max-width: none;
+  }
+
+  .title {
+    font-size: clamp(22px, calc(-3.714286px + 8.035714vw), 58px);
+    line-height: clamp(24px, calc(-4.428571px + 8.883929vw), 63.8px);
+  }
+
+  .description {
+    max-width: none;
+    margin-top: 12px;
+    font-size: clamp(16px, calc(11.714286px + 1.339286vw), 22px);
+    line-height: 1.5;
+  }
+}

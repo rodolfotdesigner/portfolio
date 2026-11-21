@@ -9,21 +9,22 @@ export default function HeroVisual() {
 
   return (
     <div className={styles.visual}>
-      <div className={styles.circle} aria-hidden="true" />
-      <div className={styles.decorativeFrame} aria-hidden="true" />
-      <div className={styles.profileFrame} aria-hidden="true" />
-      <img className={styles.pattern} src={pattern} alt="" aria-hidden="true" />
+      <div className={styles.circle} data-hero-anim="circle" aria-hidden="true" />
+      <div className={styles.decorativeFrame} data-hero-anim="decorative-frame" aria-hidden="true" />
+      <div className={styles.profileFrame} data-hero-anim="profile-frame" aria-hidden="true" />
+      <img className={styles.pattern} data-hero-anim="pattern" src={pattern} alt="" aria-hidden="true" />
       <img
         className={styles.portrait}
+        data-hero-anim="portrait"
         src={portrait}
         alt={t('hero.portraitAlt')}
         width="406"
         height="673"
       />
-      <div className={styles.accent} aria-hidden="true" />
+      <div className={styles.accent} data-hero-anim="accent" aria-hidden="true" />
       <ProfileCard />
-      <div className={styles.horizontalLine} aria-hidden="true" />
-      <div className={styles.verticalLine} aria-hidden="true" />
+      <div className={styles.horizontalLine} data-hero-anim="horizontal-line" aria-hidden="true" />
+      <div className={styles.verticalLine} data-hero-anim="vertical-line" aria-hidden="true" />
     </div>
   )
 }
