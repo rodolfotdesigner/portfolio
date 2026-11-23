@@ -3,6 +3,13 @@
     "title": "Portfolio in progress",
     "description": "The project foundation is ready."
   },
+  "languageSwitcher": {
+    "label": "Language",
+    "portuguese": "Português (Brasil)",
+    "english": "English",
+    "ptShort": "PT",
+    "enShort": "EN"
+  },
   "hero": {
     "title": "I believe great experiences don't come from excess, but from understanding.",
     "description": "With over 5 years of experience taking projects from concept to deployment, I combine strategy, design, and technology to reduce complexity and build digital products that are clearer, more consistent, and made to last.",

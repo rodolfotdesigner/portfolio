@@ -3,6 +3,13 @@
     "title": "Portfólio em preparação",
     "description": "A base do projeto está pronta."
   },
+  "languageSwitcher": {
+    "label": "Idioma",
+    "portuguese": "Português (Brasil)",
+    "english": "English",
+    "ptShort": "PT",
+    "enShort": "EN"
+  },
   "hero": {
     "title": "Acredito que boas experiências não surgem do excesso, mas da compreensão.",
     "description": "Mais de 5 anos de atuação em projetos que vão da idealização ao deploy. Uso estratégia, design e tecnologia para reduzir a complexidade e criar produtos digitais mais claros, consistentes e feitos para durar.",

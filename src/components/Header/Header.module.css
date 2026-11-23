@@ -1,0 +1,12 @@
+.header {
+  width: 100%;
+  background: var(--color-surface-page);
+}
+
+.content {
+  display: flex;
+  width: min(1515px, calc(100% - 3rem));
+  justify-content: flex-end;
+  margin-inline: auto;
+  padding-block: 0.75rem;
+}
