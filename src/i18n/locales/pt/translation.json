@@ -21,5 +21,14 @@
     "linkedin": "LinkedIn",
     "email": "Email",
     "downloadCv": "Baixar CV"
+  },
+  "projects": {
+    "title": "PROJETOS",
+    "coverAlt": {
+      "vetex": "Prévia do projeto Vetex em um tablet sobre fundo rosa e azul",
+      "buymore": "Prévia da interface de compras do projeto BuyMore",
+      "pyko": "Prévia da página do projeto Pyko com fundo verde e preto",
+      "zesto": "Prévia da página do projeto Zesto com duas pessoas segurando latas verdes"
+    }
   }
 }

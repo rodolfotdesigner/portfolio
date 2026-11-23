@@ -21,5 +21,14 @@
     "linkedin": "LinkedIn",
     "email": "Email",
     "downloadCv": "Download résumé"
+  },
+  "projects": {
+    "title": "PROJECTS",
+    "coverAlt": {
+      "vetex": "Preview of the Vetex project on a tablet against a pink and blue background",
+      "buymore": "Preview of the BuyMore shopping interface",
+      "pyko": "Preview of the Pyko project page with a green and black background",
+      "zesto": "Preview of the Zesto project page with two people holding green cans"
+    }
   }
 }
