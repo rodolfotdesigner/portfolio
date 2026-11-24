@@ -1,27 +1,58 @@
 .projects {
   position: relative;
   min-width: 0;
-  border-top: 1px solid rgb(0 0 0 / 20%);
-  border-bottom: 1px solid rgb(0 0 0 / 20%);
+  padding-block: 1px;
   background: #fff;
 }
 
-.projects::before {
+.line {
   position: absolute;
-  top: 122px;
-  right: 0;
-  left: 0;
-  height: 1px;
+  z-index: 0;
+  display: block;
   background: rgb(0 0 0 / 20%);
-  content: "";
   pointer-events: none;
 }
 
+.horizontalLine {
+  right: 0;
+  left: 0;
+  height: 1px;
+  transform-origin: left center;
+}
+
+.verticalLine {
+  top: 1px;
+  bottom: 1px;
+  width: 1px;
+  transform-origin: center top;
+}
+
+.lineTop {
+  top: 0;
+}
+
+.lineHeader {
+  top: 122px;
+}
+
+.lineBottom {
+  bottom: 0;
+}
+
+.lineLeft {
+  left: max(15.5px, calc(50% - 757.5px));
+}
+
+.lineRight {
+  right: max(15.5px, calc(50% - 757.5px));
+}
+
 .frame {
+  position: relative;
+  z-index: 1;
   width: min(1515px, calc(100% - 31px));
   margin-inline: auto;
-  padding-inline: 62px;
-  border-inline: 1px solid rgb(0 0 0 / 20%);
+  padding-inline: 63px;
 }
 
 .header {
@@ -74,7 +105,7 @@
 
 @media (max-width: 900px) {
   .frame {
-    padding-inline: clamp(11.5px, 4vw, 62px);
+    padding-inline: calc(clamp(11.5px, 4vw, 62px) + 1px);
   }
 
   .list {
@@ -86,15 +117,23 @@
 
 @media (max-width: 600px) {
   .projects {
-    border-bottom: 0;
+    padding-bottom: 0;
   }
 
-  .projects::before {
+  .lineHeader {
     top: 52px;
   }
 
+  .lineBottom {
+    display: none;
+  }
+
+  .verticalLine {
+    bottom: 0;
+  }
+
   .frame {
-    padding-inline: 11.5px;
+    padding-inline: 12.5px;
   }
 
   .header {

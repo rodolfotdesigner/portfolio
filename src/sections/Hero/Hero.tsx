@@ -4,11 +4,15 @@ import HeroVisual from './HeroVisual'
 import { useHeroAnimation } from './useHeroAnimation'
 import styles from './Hero.module.css'
 
-export default function Hero() {
+type HeroProps = {
+  onIntroComplete?: () => void
+}
+
+export default function Hero({ onIntroComplete }: HeroProps) {
   const { t } = useTranslation()
   const sectionRef = useRef<HTMLElement>(null)
 
-  useHeroAnimation(sectionRef)
+  useHeroAnimation(sectionRef, onIntroComplete)
 
   return (
     <section ref={sectionRef} className={styles.hero} aria-labelledby="hero-title">

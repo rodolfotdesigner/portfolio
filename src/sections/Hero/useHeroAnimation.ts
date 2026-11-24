@@ -1,20 +1,43 @@
 import type { RefObject } from 'react'
+import { useEffect, useRef } from 'react'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 
-export function useHeroAnimation(scope: RefObject<HTMLElement | null>) {
+export function useHeroAnimation(
+  scope: RefObject<HTMLElement | null>,
+  onIntroComplete?: () => void,
+) {
+  const onIntroCompleteRef = useRef(onIntroComplete)
+  const hasReportedCompletion = useRef(false)
+
+  useEffect(() => {
+    onIntroCompleteRef.current = onIntroComplete
+  }, [onIntroComplete])
+
   useGSAP(
     () => {
+      let active = true
+      const reportCompletion = () => {
+        if (!active || hasReportedCompletion.current) return
+
+        hasReportedCompletion.current = true
+        onIntroCompleteRef.current?.()
+      }
+
       const motion = gsap.matchMedia(scope)
 
+      motion.add('(prefers-reduced-motion: reduce)', reportCompletion)
+
       motion.add('(prefers-reduced-motion: no-preference)', () => {
+        if (hasReportedCompletion.current) return
+
         gsap.set('[data-hero-anim="name"]', { clipPath: 'inset(0 100% 0 0)' })
         gsap.set('[data-hero-anim="role"]', { y: 12, opacity: 0 })
         gsap.set('[data-hero-anim="contact"]', { y: 16, opacity: 0 })
         gsap.set('[data-hero-anim="title"]', { y: 24, opacity: 0 })
         gsap.set('[data-hero-anim="description"]', { y: 24, opacity: 0 })
 
-        const timeline = gsap.timeline()
+        const timeline = gsap.timeline({ onComplete: reportCompletion })
 
         timeline
           .fromTo(
@@ -104,7 +127,10 @@ export function useHeroAnimation(scope: RefObject<HTMLElement | null>) {
           )
       })
 
-      return () => motion.revert()
+      return () => {
+        active = false
+        motion.revert()
+      }
     },
     { scope },
   )
