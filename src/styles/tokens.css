@@ -5,6 +5,7 @@
   --color-primary-900: #1b298d;
   --color-primary-950: #151b56;
   --color-neutral-50: #f6f5f3;
+  --color-neutral-text: #424957;
 
   /* Semantic colors */
   --color-surface-page: var(--color-neutral-50);
