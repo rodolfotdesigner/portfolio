@@ -30,5 +30,56 @@
       "pyko": "Prévia da página do projeto Pyko com fundo verde e preto",
       "zesto": "Prévia da página do projeto Zesto com duas pessoas segurando latas verdes"
     }
+  },
+  "about": {
+    "title": "SOBRE MIM",
+    "portraitAlt": "Retrato de Rodolfo Tadeu",
+    "biography": {
+      "1": "Ao longo dos últimos 5 anos, atuei como Front-end Developer em projetos de diferentes segmentos, colaborando com equipes multidisciplinares para transformar requisitos de negócio em interfaces intuitivas, acessíveis e consistentes.",
+      "2": "Essa experiência ampliou minha visão sobre como estratégia, design e tecnologia podem trabalhar juntas para criar produtos mais claros, escaláveis e centrados nas pessoas.",
+      "3": "Hoje, concentro meu desenvolvimento em UX, Design Systems e Front-end, buscando construir experiências que reduzam a complexidade e gerem valor tanto para os usuários quanto para o negócio."
+    },
+    "education": {
+      "title": "Educação",
+      "degree": "Bacharel em Desenho Industrial (2012)"
+    },
+    "download": "Baixar",
+    "downloadAriaLabel": "Baixar diploma",
+    "tools": {
+      "title": "Ferramentas",
+      "items": {
+        "html": "HTML",
+        "css3": "CSS3",
+        "sass": "Sass",
+        "javascript": "JavaScript",
+        "nodejs": "Node.js",
+        "react": "React",
+        "redux": "Redux",
+        "github": "GitHub",
+        "vscode": "Visual Studio Code",
+        "claude": "Claude",
+        "codex": "OpenAI Codex",
+        "figma": "Figma",
+        "photoshop": "Photoshop",
+        "illustrator": "Illustrator",
+        "afterEffects": "After Effects"
+      }
+    },
+    "experience": {
+      "title": "Experiência profissional",
+      "titleMobile": "Experiência",
+      "kenlo": {
+        "role": "Kenlo — Desenvolvedor Front-end (2021 - 2024)",
+        "description": {
+          "1": "Atuei em diversas squads de produto, com foco em usabilidade, performance e componentização. Desenvolvimento de interfaces em React e Next.js, com TypeScript e Styled-components. Implementação de testes automatizados com Jest e React Testing Library. Contribuição no Design System com Storybook, integração com APIs REST e GraphQL (Apollo). Foco em performance.",
+          "2": "Utilização de Redux Toolkit para gerenciamento de estado global.",
+          "3": "Resultados: Redução de 70% no tempo gasto pelos clientes em tarefas manuais, aumentando a eficiência e recuperando a reputação da empresa."
+        }
+      },
+      "mercadocar": {
+        "role": "Mercadocar — Designer e Desenvolvedor Front-End (2015 - 2018)",
+        "description": "Iniciei na equipe de UI/UX, conduzindo pesquisas com usuários e criando fluxos do e-commerce que aumentaram em 30% a taxa de conversão. Atuei como desenvolvedor Front-End com JavaScript (ES6+), HTML5, CSS/SASS, jQuery e Webpack. Implementação de design responsivo mobile-first e integração com APIs REST."
+      }
+    }
   }
 }
