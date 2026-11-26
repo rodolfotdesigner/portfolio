@@ -1,6 +1,7 @@
 .about {
   position: relative;
   min-width: 0;
+  overflow-x: clip;
   overflow-wrap: break-word;
   background: linear-gradient(122.628deg, #fff 29.049%, #dae5ff 100%);
 }
@@ -350,7 +351,9 @@ article p,
   }
 
   .contentEducation {
-    width: 287px;
+    width: min(100%, 360px);
+    flex-wrap: wrap;
+    column-gap: 12px;
     margin-left: 1.5px;
     padding-left: 16px;
   }
@@ -363,9 +366,10 @@ article p,
   }
 
   .aboutDownload {
+    width: max-content;
     height: 44px;
     margin-top: 11px;
-    padding-top: 25px;
+    padding: 25px 0 0;
   }
 
   .toolsSection {
