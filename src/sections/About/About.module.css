@@ -224,6 +224,11 @@ article p,
   padding: 10px 12px 0;
 }
 
+.aboutDownload:focus-within {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
 .aboutDownload svg {
   flex: none;
 }
