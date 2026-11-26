@@ -295,7 +295,6 @@ article p,
     width: min(100%, 777px);
     justify-self: center;
   }
-
 }
 
 @media (max-width: 767px) {
@@ -380,6 +379,7 @@ article p,
   .toolsSection {
     align-items: flex-start;
     gap: 14px;
+    margin-left: 16px;
   }
 
   .toolsList {
