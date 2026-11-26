@@ -128,79 +128,93 @@
   background: #3665fb;
 }
 
+/* The line must end before the biography when the upper block becomes one column. */
+@media (max-width: 1439px) {
+  .verticalLine {
+    height: clamp(569px, calc(-277.04658px + 66.14907vw), 675.5px);
+  }
+}
+
+@media (max-width: 1279px) {
+  .verticalLine {
+    height: clamp(537px, calc(488.90607px + 6.26223vw), 569px);
+  }
+}
+
 @media (max-width: 767px) {
+  /* Each layer interpolates between the approved 320px and 768px geometries. */
   .composition {
-    width: 320px;
-    height: 304px;
-    margin-left: calc(50% - 160px);
+    width: clamp(320px, calc(166.42857px + 47.99107vw), 535px);
+    height: clamp(304px, calc(172.57143px + 41.07143vw), 488px);
+    margin-left: calc(50% - clamp(160px, calc(83.21429px + 23.99554vw), 267.5px));
   }
 
   .backgroundPanel {
-    top: 89px;
-    left: 36px;
-    width: 226px;
-    height: 167px;
+    top: clamp(89px, calc(59.71429px + 9.15179vw), 130px);
+    left: clamp(0px, calc(61.71429px - 8.03571vw), 36px);
+    width: clamp(226px, calc(41.71429px + 57.58929vw), 484px);
+    height: clamp(167px, calc(30.57143px + 42.63393vw), 358px);
   }
 
   .pattern {
-    top: 89px;
-    left: 37px;
-    width: 224px;
-    height: 167px;
+    top: clamp(89px, calc(59.71429px + 9.15179vw), 130px);
+    left: clamp(3px, calc(61.28571px - 7.58929vw), 37px);
+    width: clamp(224px, calc(42.57143px + 56.69643vw), 478px);
+    height: clamp(167px, calc(30.57143px + 42.63393vw), 358px);
   }
 
   .semicircle {
-    top: 75px;
-    left: 23px;
-    width: 13px;
-    height: 14px;
-    border-top-left-radius: 13px;
+    top: clamp(75px, calc(56.07143px + 5.91518vw), 101.5px);
+    left: clamp(-29px, calc(60.14286px - 11.60714vw), 23px);
+    width: clamp(13px, calc(2.28571px + 3.34821vw), 28px);
+    height: clamp(14px, calc(4px + 3.125vw), 28px);
+    border-top-left-radius: clamp(13px, calc(2.28571px + 3.34821vw), 28px);
   }
 
   .horizontalLine {
-    top: 89px;
-    left: 16px;
-    width: 287px;
+    top: clamp(89px, calc(60.07143px + 9.04018vw), 129.5px);
+    left: clamp(-42px, calc(57.42857px - 12.94643vw), 16px);
+    width: clamp(287px, calc(52.71429px + 73.21429vw), 615px);
   }
 
   .verticalLine {
-    top: 12px;
-    left: 36px;
-    height: 291.5px;
+    top: clamp(-35px, calc(45.57143px - 10.49107vw), 12px);
+    left: clamp(-0.5px, calc(62.07143px - 8.14732vw), 36px);
+    height: clamp(291.5px, calc(116.14286px + 54.79911vw), 537px);
   }
 
   .rightBar {
-    top: 52px;
-    left: 232px;
-    width: 12px;
-    height: 204px;
+    top: clamp(50px, calc(53.42857px - 0.44643vw), 52px);
+    left: clamp(232px, calc(98.42857px + 41.74107vw), 419px);
+    width: clamp(12px, calc(2px + 3.125vw), 26px);
+    height: clamp(204px, calc(36.85714px + 52.23214vw), 438px);
   }
 
   .portrait {
-    top: 47px;
-    left: 41px;
-    width: 221px;
+    top: clamp(0px, calc(80.57143px - 10.49107vw), 47px);
+    left: clamp(10px, calc(63.14286px - 6.91964vw), 41px);
+    width: clamp(221px, calc(11px + 65.625vw), 515px);
     height: auto;
   }
 
   .leftOverlay {
-    top: 29px;
-    left: 49px;
-    width: 37px;
-    height: 204px;
+    top: clamp(0px, calc(49.71429px - 6.47321vw), 29px);
+    left: clamp(28px, calc(64px - 4.6875vw), 49px);
+    width: clamp(37px, calc(7px + 9.375vw), 79px);
+    height: clamp(204px, calc(38.28571px + 51.78571vw), 436px);
   }
 
   .lowerOverlay {
-    top: 236px;
-    left: 101px;
-    width: 203px;
-    height: 12px;
+    top: clamp(236px, calc(87.42857px + 46.42857vw), 444px);
+    left: clamp(101px, calc(74.57143px + 8.25893vw), 138px);
+    width: clamp(203px, calc(36.57143px + 52.00893vw), 436px);
+    height: clamp(12px, calc(2.71429px + 2.90179vw), 25px);
   }
 
   .circle {
-    top: 210px;
-    left: 225px;
-    width: 27px;
-    height: 26px;
+    top: clamp(210px, calc(83.57143px + 39.50893vw), 387px);
+    left: clamp(225px, calc(97.14286px + 39.95536vw), 404px);
+    width: clamp(27px, calc(5.57143px + 6.69643vw), 57px);
+    height: clamp(26px, calc(3.85714px + 6.91964vw), 57px);
   }
 }
