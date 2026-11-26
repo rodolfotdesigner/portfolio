@@ -40,6 +40,7 @@
   width: 288px;
   gap: 0.875rem;
   align-items: center;
+  justify-content: center;
   margin: 1.125rem auto 0;
   padding: 0;
   list-style: none;
@@ -69,7 +70,24 @@
 }
 
 .download {
+  display: flex;
   width: 120px;
+  min-width: max-content;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding-inline: 8px;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.downloadIcon {
+  flex: none;
 }
 
 .contact img {
@@ -104,7 +122,7 @@
 
   .contacts {
     width: max-content;
-    max-width: calc(100% - 28px);
+    max-width: calc(100% - 8px);
     gap: clamp(9px, calc(5.428571px + 1.116071vw), 14px);
     margin-top: clamp(1.125rem, calc(31.714286px - 1.785714vw), 1.625rem);
   }
@@ -122,5 +140,11 @@
 
   .download {
     width: clamp(113px, calc(108px + 1.5625vw), 120px);
+  }
+}
+
+@media (max-width: 376px) {
+  .download {
+    padding-inline: 4px;
   }
 }
