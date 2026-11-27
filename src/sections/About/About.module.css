@@ -380,6 +380,7 @@ article p,
     align-items: flex-start;
     gap: 14px;
     margin-left: 16px;
+    margin-bottom: 48px;
   }
 
   .toolsList {
