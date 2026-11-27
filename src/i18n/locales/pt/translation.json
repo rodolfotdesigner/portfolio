@@ -81,5 +81,12 @@
         "description": "Iniciei na equipe de UI/UX, conduzindo pesquisas com usuários e criando fluxos do e-commerce que aumentaram em 30% a taxa de conversão. Atuei como desenvolvedor Front-End com JavaScript (ES6+), HTML5, CSS/SASS, jQuery e Webpack. Implementação de design responsivo mobile-first e integração com APIs REST."
       }
     }
+  },
+  "footer": {
+    "navAriaLabel": "Links de contato",
+    "contact": "CONTATO",
+    "linkedin": "LINKEDIN",
+    "email": "EMAIL",
+    "copyright": "© {{year}} Rodolfo Tadeu. Todos os direitos reservados."
   }
 }

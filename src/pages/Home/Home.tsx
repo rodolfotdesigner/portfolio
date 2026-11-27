@@ -1,5 +1,6 @@
 import { useCallback, useState } from 'react'
 import Header from '../../components/Header/Header'
+import Footer from '../../components/Footer/Footer'
 import Hero from '../../sections/Hero/Hero'
 import Projects from '../../sections/Projects/Projects'
 import About from '../../sections/About/About'
@@ -19,6 +20,7 @@ export default function Home() {
         <Projects heroIntroComplete={heroIntroComplete} />
         <About />
       </main>
+      <Footer />
     </>
   )
 }
