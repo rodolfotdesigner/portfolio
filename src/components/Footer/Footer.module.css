@@ -57,6 +57,11 @@
   outline-offset: 4px;
 }
 
+.link:focus {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
 .copyright {
   position: relative;
   display: flex;
@@ -64,11 +69,25 @@
   align-items: center;
   margin: var(--copyright-gap) 0 0;
   padding-inline: var(--text-inset);
-  border-top: 0.5px solid rgb(255 255 255 / 20%);
+  border-top: 0.5px solid transparent;
   font-family: 'Inter', sans-serif;
   font-size: var(--copyright-font-size);
   font-weight: 400;
   line-height: normal;
+}
+
+.copyrightLine {
+  position: absolute;
+  top: -0.5px;
+  right: 0;
+  left: 0;
+  height: 0.5px;
+  background: rgb(255 255 255 / 20%);
+  pointer-events: none;
+}
+
+.copyrightText {
+  min-width: 0;
 }
 
 .line {
