@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next'
 import whatsappIcon from '../../assets/icons/WhatsApp.svg'
 import linkedinIcon from '../../assets/icons/Linkedin.svg'
 import emailIcon from '../../assets/icons/Email.svg'
+import { contacts } from '../../data/contacts'
 import styles from './ProfileCard.module.css'
 
 export default function ProfileCard() {
@@ -15,7 +16,7 @@ export default function ProfileCard() {
         <li data-hero-anim="contact">
           <a
             className={styles.contact}
-            href="https://wa.me/5511983447912"
+            href={contacts.whatsapp}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -25,7 +26,7 @@ export default function ProfileCard() {
         <li data-hero-anim="contact">
           <a
             className={styles.contact}
-            href="https://www.linkedin.com/in/rodolfo-tadeu/"
+            href={contacts.linkedin}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -33,7 +34,7 @@ export default function ProfileCard() {
           </a>
         </li>
         <li data-hero-anim="contact">
-          <a className={`${styles.contact} ${styles.email}`} href="mailto:rodolfotdesigner@gmail.com">
+          <a className={`${styles.contact} ${styles.email}`} href={contacts.email}>
             <img src={emailIcon} alt={t('hero.email')} width="26" height="21" />
           </a>
         </li>
